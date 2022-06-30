@@ -22,13 +22,13 @@ Uma aplicação React utilizando o Vite e colocando em pratica conceitos de comp
 ## 💻 Instalação e uso
 
 ```
-$ git clone https://github.com/jaquelinepires/Feed-web.git
+$ git clone https://github.com/jaquelinepires/feed-web.git
 ```
 
-3. Vá para a pasta Feed-web:
+3. Vá para a pasta feed-web:
 
 ```
-$ cd Feed-web
+$ cd feed-web
 ```
 
 4. Instale as dependêcias:
