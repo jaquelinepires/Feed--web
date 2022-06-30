@@ -6,7 +6,7 @@
 
 ## 👨🏻‍💻 Sobre o Projeto
 
-Um Uma aplicação React utilizando o Vite e colocando em pratica conceitos de componentização, propriedades, estados, imutabilidade e hooks.
+Uma aplicação React utilizando o Vite e colocando em pratica conceitos de componentização, propriedades, estados, imutabilidade e hooks.
 
 ---
 
