@@ -15,7 +15,7 @@ export const Container = styled.div`
   flex: 1;
 }
 .commentContent {
-  background: var(--gray-700);
+  background: ${props => props.theme.colors.commentBox};
   border-radius: 8px;
   padding: 1rem;
 }
@@ -30,17 +30,18 @@ header {
   display: block;
   font-size: 0.875rem;
   line-height: 1.6rem;
+  color:${props => props.theme.colors.strong};
 }
 .authorAndTime time{
   display: block;
   font-size: 0.75rem;
   line-height: 1.6rem;
-  color: var(--gray-400);
+  color: ${props => props.theme.colors.span};
 }
 .commentContent header button {
   background: transparent;
   border: 0;
-  color: var(--gray-400);
+  color: ${props => props.theme.colors.span};
   cursor: pointer;
   line-height: 0;
   border-radius: 2px;  
@@ -51,7 +52,7 @@ header {
   }
   .commentContent p{
     margin-top: 1rem;
-    color: var(--gray-300);
+    color: ${props => props.theme.colors.paragraph};
   }
   .commentBox footer{
     margin-top: 1rem;
@@ -59,7 +60,7 @@ header {
   .commentBox footer button{
     background: transparent;
     border: 0;
-    color: var(--gray-400);
+    color: ${props => props.theme.colors.span};
     cursor: pointer;
 
     display: flex;

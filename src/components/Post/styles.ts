@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: var(--gray-800);
+  background: ${props => props.theme.colors.primary};
   border-radius: 8px;
   padding: 2.5rem;
 
@@ -24,7 +24,7 @@ export const Header = styled.div`
   }
 time{
   font-size: 0.875rem;
-  color: var(--gray-400);
+  color: ${props => props.theme.colors.span};
  }
  .author{
   display: flex;
@@ -33,13 +33,13 @@ time{
  }
  .authorInfo strong {
   display: block;
-  color: var(--gray-100);
+  color: ${props => props.theme.colors.strong};
   line-height: 1.6rem;
  }
  .authorInfo span{
   display: block;
   font-size: 0.875rem;
-  color: var(--gray-400);
+  color: ${props => props.theme.colors.span};
   line-height: 1.6rem;
  }
 
@@ -47,7 +47,7 @@ time{
 
 export const Content = styled.div`
   line-height: 1.6rem;
-  color: var(--gray-300);
+  color: ${props => props.theme.colors.paragraph};
   margin-top: 1.5rem;
 
   p{
@@ -67,21 +67,21 @@ export const FormContainer = styled.div`
   width: 100%;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid var(--gray-600);
+  border-top: 1px solid ${props => props.theme.colors.border} ;
 
 strong{
   line-height: 1.6rem;
-  color: var(--gray-100);
+  color: ${props => props.theme.colors.strong};
 }
 textarea{
   width: 100%;
-  background-color: var(--gray-900);
+  background-color: ${props => props.theme.colors.comment};
   border: 0;
   resize: none;
   height: 6rem;
   padding: 1rem;
   border-radius: 8px;
-  color: var(--gray-100);
+  color: ${props => props.theme.colors.strong};
   line-height: 1.4rem;
   margin-top: 1rem;
 }

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: var(--gray-800);
+  background: ${props => props.theme.colors.primary};
   border-radius: 8px;
   overflow: hidden;
 
@@ -27,19 +27,19 @@ export const Container = styled.div`
     }
     strong{
       margin-top: 1rem;
-      color: var(--gray-100);
+      color: ${props => props.theme.colors.strong};
       line-height: 1.6rem;
     }
 
     span{
       font-size: 0.875rem;
-      color: var(--gray-400);
+      color: ${props => props.theme.colors.span};
       line-height: 1.6rem;
     }
 `;
 
 export const Footer = styled.div`
-  border-top: 1px solid var(--gray-600);
+  border-top: 1px solid ${props => props.theme.colors.border};
   margin-top: 1.5rem;
   padding: 1.5rem 2rem 2rem;
 

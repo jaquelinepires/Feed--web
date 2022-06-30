@@ -1,7 +1,12 @@
-import { Header } from "./components/Header/index.jsx";
+import { DefaultTheme, ThemeProvider } from "styled-components";
+import usePersistedState from "./utils/usePersistedState.js";
+import  Header  from "./components/Header";
 import { Post } from "./components/Post/index.jsx";
-import { Sidebar } from "./components/Sidebar/index.jsx";
+import { Sidebar } from "./components/Sidebar/index.js";
 import { GlobalStyle } from "./styles/global";
+
+import light from "./styles/themes/light";
+import dark from "./styles/themes/dark";
 
 const posts = [
   {
@@ -34,9 +39,15 @@ const posts = [
   }
 ]
 export function App() {
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dark);
+
+  const toggleTheme = () => {
+    setTheme(theme.title === 'dark' ? light : dark);
+  }
    return (
+      <ThemeProvider theme={theme}>
     <div>
-      <Header />
+      <Header toggleTheme={toggleTheme}/>
 
       <div className="wrapper">
        <Sidebar />
@@ -55,6 +66,7 @@ export function App() {
       </div>
       <GlobalStyle />
     </div>
+      </ThemeProvider>
   )
 }
 

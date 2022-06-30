@@ -1,6 +1,5 @@
 import { Container, Profile, Footer } from './styles';
 import { PencilLine } from 'phosphor-react';
-import { Avatar } from '../Avatar';
 export function Sidebar() {
   return (
     <Container>

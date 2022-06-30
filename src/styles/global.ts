@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 body {
-  background: var(--gray-900);
+  background: ${props => props.theme.colors.background};
   color: var(--gray-300);
   -webkit-font-smoothing: antialiased;
 }
