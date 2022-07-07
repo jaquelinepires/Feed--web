@@ -49,4 +49,4 @@ Caso não abra automaticamente, acesse http://localhost:3000 para visualizá-lo 
 
 ---
 
-Feito com 💙 by Jaqueline Pires
+Feito com 🤍 by Jaqueline Pires
